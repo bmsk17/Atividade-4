@@ -144,7 +144,7 @@ def create_gif_from_spritesheet(sprite_sheet_path, frame_width, frame_height, fr
         frames.append(frame)
 
     frames[0].save(output_path, format='GIF',
-                   append_images=frames[1:], save_all=True, duration=500, loop=0)
+                   append_images=frames[1:], save_all=True, duration=1500, loop=0)
 
 create_gif_from_spritesheet('sprite_sheet.png', frames[0].width, frames[0].height, frame_index, 'simulacao_porto_balsa.gif')
 
